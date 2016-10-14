@@ -1,0 +1,38 @@
+{
+  "name": "play-25-boilerplate",
+  "description": "Sample Play 2.5 app",
+  "base_url": "http://localhost:9000",
+  "info": {
+    "contact": {
+      "name": "Joe Bloggs",
+      "email": "joe@blogs.com"
+    }
+  },
+  "apidoc": {
+    "version": "0.9.30"
+  },
+  "models": {
+    "healthcheck":{
+      "fields": [
+        {"name":"name", "type": "string"}
+      ]
+    }
+  },
+  "resources": {
+    "healthcheck":{
+      "path": "/healthcheck",
+      "plural": "healthcheck",
+      "operations": [
+        {
+          "method": "GET",
+          "responses": {
+            "200": {
+              "type": "healthcheck"
+            }
+          }
+        }
+      ]
+    }
+
+  }
+}
