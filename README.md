@@ -1,9 +1,7 @@
 A Play 2.5 REST app boilerplate with ApiDoc.me
 
-To run
+#To run
+  sbt run
 
-sbt run
-
-Healthcheck
-
-curl "http://localhost:9000/healthcheck"
+#Healthcheck
+  curl "http://localhost:9000/healthcheck"
